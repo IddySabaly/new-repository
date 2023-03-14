@@ -1,2 +1,0 @@
-# new-repository
-sabaly only
