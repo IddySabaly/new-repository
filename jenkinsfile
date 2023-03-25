@@ -9,13 +9,8 @@ pipeline {
      stage ('copy file to aws ec2 ') { 
             steps {
                 // copy files from local_machine 
-                sh 'scp iddy@172.30.1.95:/home/iddy/Downloads/style.css ./' 
+                sh 'scp -r iddy@172.30.1.95:/home/iddy/Downloads/files/ /home/ubuntu/' 
 
-            }
-        }
-        stage('Test') { 
-            steps {
-                // 
             }
         }
         stage('Deploy') { 
@@ -25,3 +20,4 @@ pipeline {
         }
     }
 }
+
