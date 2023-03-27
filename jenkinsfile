@@ -10,14 +10,14 @@ pipeline {
      stage ('copy file to aws ec2 ') { 
             steps {
                 // copy files from local_machine 
-                sh 'scp -r iddy@172.30.1.95:/home/iddy/Downloads/files/  ec2-3-238-39-33.compute-1.amazonaws.com/home/ubuntu/' 
+                sh 'scp -r iddy@172.30.1.95:/home/iddy/Downloads/files/  ec2-3-93-162-48.compute-1.amazonaws.com/home/ubuntu/' 
 
             }
         }
         stage('Deploy') { 
             steps {
                 // deploy copied files from local_machine to aws instance
-                sh 'ec2-3-238-39-33-1.amazonaws.com/home/ubuntu/'
+                sh 'ec2-3-93-162-48.compute-1.amazonaws.com/home/ubuntu/'
             }
         }
     }
