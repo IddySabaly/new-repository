@@ -16,7 +16,8 @@ pipeline {
         }
         stage('Deploy') { 
             steps {
-                // deploy files to 
+                // deploy copied files from local_machine to aws instance
+                sh 'ec2-3-238-39-33-1.amazonaws.com/home/ubuntu/'
             }
         }
     }
